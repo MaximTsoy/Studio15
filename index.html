@@ -9,11 +9,48 @@
 
 
     <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.noisy.min.js"></script>
     <script src="js/script.js"></script>
     <title>Studio 15</title>
 </head>
 <body>
+<div id="callback" class="modal fade" role="dialog" aria-labelledby="topic">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p>Заказать обратный звонок</p>
+            </div>
+            <div class="modal-body">
+                <form autocomplete="off" method="post" action="mail.php">
+                    <div>
+                        <label for="name">Ваше имя:</label>
+                        <input id="name" type="text" required name="name" placeholder="Введите имя"/>
+                    </div>
+
+                    <div>
+                        <label for="email">Ваш e-mail:</label>
+                        <input id="email" type="email" required name="email" placeholder="Введите e-mail"/>
+                    </div>
+
+                    <div>
+                        <label for="tel">Ваш телефон:</label>
+                        <input id="tel" type="tel" required name="tel" placeholder="Введите контактный телефон"/>
+                    </div>
+                    <div class="clearfix"></div>
+
+					<input type="submit" value="заказать сейчас" name="submit" />
+
+                </form>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="form">
+
+    </div>
+</div>
 <div class="row" id="wrapper">
     <!-- Header starts -->
     <header class="row">
@@ -103,7 +140,9 @@
                 <div class="col-lg-12">
                     <div>
                         <p>Мы хотели бы услышать о вашем проекте</p>
-                        <button>Закажите обратный звонок</button>
+                        <button data-toggle="modal" data-target="#callback" type="button">
+                            Закажите обратный звонок
+                        </button>
                     </div>
                 </div>
             </section>

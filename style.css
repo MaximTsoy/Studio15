@@ -207,8 +207,50 @@
 }
 /* Third Content on the Wrapper ENDS */
 
+/* #callback starts */
 
+#callback div>input{
+    float: right;
+    margin-left: 20px;
+}
+#callback p{
+    font-family: "Open Sans reg";
+    font-size: 20px;
+    color: #444446;
+}
 
+#callback label{
+    font-family: "Open Sans light";
+    font-size: 19px;
+    color: #83a3b0;
+}
+
+#callback form>div{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#callback input{
+    display: block;
+    margin-bottom: 20px;
+    width: 300px;
+    margin-right: 40px;
+}
+
+#callback form>input[type=submit]{
+    float: right;
+    width: 150px;
+    margin-bottom: 0px;
+    font-family: "Open Sans semiBold";
+    font-size: 16px;
+
+    color: #2d3d47;
+    text-align: center;
+    background: #83a3b0;
+}
+
+/* #callback ends */
 .content_1{
     height: 450px;
 }
