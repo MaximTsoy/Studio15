@@ -251,6 +251,73 @@
 }
 
 /* #callback ends */
+
+/* #call starts */
+#call{
+    position: absolute;
+    top: 130px;
+    left: 25px;
+    z-index: 1;
+    width: 340px;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(61, 149, 186, 0.8);
+
+
+}
+
+#call div>input{
+    border-radius: 5px;
+    height: 40px;
+    margin-left: 20px;
+}
+#call p{
+    font-family: "Open Sans semiBold";
+    margin-top: 5px;
+    font-size: 22px;
+    color: #444446;
+}
+
+#call label{
+    font-family: "Open Sans light";
+    font-size: 19px;
+    color: #83a3b0;
+}
+
+#call form>div{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#call input{
+    display: block;
+    margin-bottom: 20px;
+    width: 250px;
+    margin: auto;
+    color: #83a3b0;
+    padding: 12px;
+}
+
+#call form>input[type=submit]{
+    float: right;
+    width: 150px;
+    margin-bottom: 0;
+    font-family: "Open Sans semiBold";
+    font-size: 16px;
+    margin-right: 20px;
+    border-radius: 5px;
+    color: #2d3d47;
+    text-align: center;
+    background: #D8C02B;
+    padding: 2px;
+    height: 30px;
+}
+
+/* #call ends */
 .content_1{
     height: 450px;
 }
